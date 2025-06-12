@@ -1,8 +1,9 @@
 // Membuat package latihan3
 package latihan3;
 
+// Kelas Rumus
 public class Rumus {
-    // Nama: Aldi
+    // Nama: M. Aldi Ripandi
     // NPM: 2210010610
     // Kelas: 4C-TI
 
@@ -67,17 +68,25 @@ public class Rumus {
         System.out.println("Lebar: " + lebar);
         System.out.println("Hasil: " + hasil);
     }
+}
 
+// Kelas RumusBeraksi
+  class RumusBeraksi {
     public static void main(String[] args) {
-        // Membuat objek Rumus dan menginisialisasi nilai atribut dengan nilai default (0)
-        Rumus rumus = new Rumus();
+        // Membuat objek dari class Rumus dengan nama objek sesuai nama panggilan
+        Rumus aldi = new Rumus();
 
-        // Menghitung luas persegi dan menampilkan hasil
-        rumus.hitungLuasPersegi();
-        rumus.tampilkanData();
+        // Set nilai untuk menghitung luas persegi (sisi = 4)
+        aldi.setSisi(4);
+        aldi.hitungLuasPersegi();
+        System.out.println("Luas Persegi:");
+        aldi.tampilkanData();  // Menampilkan hasil luas persegi
 
-        // Menghitung luas persegi panjang dan menampilkan hasil
-        rumus.hitungLuasPersegiPanjang();
-        rumus.tampilkanData();
+        // Set nilai untuk menghitung luas persegi panjang (panjang = 5, lebar = 3)
+        aldi.setPanjang(5);
+        aldi.setLebar(3);
+        aldi.hitungLuasPersegiPanjang();
+        System.out.println("\nLuas Persegi Panjang:");
+        aldi.tampilkanData();  // Menampilkan hasil luas persegi panjang
     }
 }
