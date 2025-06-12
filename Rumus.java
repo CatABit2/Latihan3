@@ -12,11 +12,12 @@ public class Rumus {
     private double lebar;
     private double hasil;
 
-    // Konstruktor untuk menginisialisasi nilai atribut
-    public Rumus(double sisi, double panjang, double lebar) {
-        this.sisi = sisi;
-        this.panjang = panjang;
-        this.lebar = lebar;
+    // Konstruktor untuk memastikan nilai awal atribut sisi, panjang, lebar, dan hasil adalah nol
+    public Rumus() {
+        this.sisi = 0;
+        this.panjang = 0;
+        this.lebar = 0;
+        this.hasil = 0;
     }
 
     // Getter dan Setter untuk sisi, panjang, lebar, dan hasil
@@ -44,12 +45,9 @@ public class Rumus {
         this.lebar = lebar;
     }
 
+    // Method accessor untuk mengembalikan nilai hasil
     public double getHasil() {
         return hasil;
-    }
-
-    public void setHasil(double hasil) {
-        this.hasil = hasil;
     }
 
     // Method untuk menghitung luas persegi
@@ -71,8 +69,8 @@ public class Rumus {
     }
 
     public static void main(String[] args) {
-        // Membuat objek Rumus dan menginisialisasi nilai atribut
-        Rumus rumus = new Rumus(5, 10, 4); // Gantilah nilai sesuai kebutuhan
+        // Membuat objek Rumus dan menginisialisasi nilai atribut dengan nilai default (0)
+        Rumus rumus = new Rumus();
 
         // Menghitung luas persegi dan menampilkan hasil
         rumus.hitungLuasPersegi();
