@@ -1,4 +1,3 @@
-// Membuat package latihan3
 package latihan3;
 
 // Kelas Rumus
