@@ -52,7 +52,17 @@ public class Rumus {
         this.hasil = hasil;
     }
 
-    // Method untuk menampilkan nilai atribut
+    // Method untuk menghitung luas persegi
+    public void hitungLuasPersegi() {
+        hasil = sisi * sisi;
+    }
+
+    // Method untuk menghitung luas persegi panjang
+    public void hitungLuasPersegiPanjang() {
+        hasil = panjang * lebar;
+    }
+
+    // Method untuk menampilkan nilai atribut dan hasil
     public void tampilkanData() {
         System.out.println("Sisi: " + sisi);
         System.out.println("Panjang: " + panjang);
@@ -64,7 +74,12 @@ public class Rumus {
         // Membuat objek Rumus dan menginisialisasi nilai atribut
         Rumus rumus = new Rumus(5, 10, 4); // Gantilah nilai sesuai kebutuhan
 
-        // Menampilkan data
+        // Menghitung luas persegi dan menampilkan hasil
+        rumus.hitungLuasPersegi();
+        rumus.tampilkanData();
+
+        // Menghitung luas persegi panjang dan menampilkan hasil
+        rumus.hitungLuasPersegiPanjang();
         rumus.tampilkanData();
     }
 }
